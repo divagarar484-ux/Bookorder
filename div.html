@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="Style.css">
+<html>
+    <head>
+        <title>SIH 2025</title>
+         <link rel="icon" href="top.webp">
+    </head>
+    <body bgcolor="black" style="color: white">
+        <center>
+            <hr>
+            <h1 id="one"> Welcome to Learning Adaptor 👀 </h1>
+            <p>Smart India Hackathon 2025</p>
+            <hr>
+        </center>
+        <center>
+        <h1 class="one">Welcome To Learning adaptor </h1>
+        <p>Learning is one of the most fascinating and fundamental aspects<br> of being human—and <br>it’s not just about memorizing facts or passing exams.<br> It’s about transformation. Here's a breakdown to spark your curiosity
+        </p>
+        </center>
+        <center>
+        <img src="mid 2.png" >
+          <br>  <li>Login</li>
+           <li> Enter your age</li>
+            <li>Get study material and plans</li>
+        <button> click</button>
+        </center>
+        <Center> 
+        <a href="https://www.bing.com/videos/riverview/relatedvideo?q=learning&mid=D686453C79318610C883D686453C79318610C883&FORM=VIRE" style="color: aqua;">WWW. GETSOURCE. COM</a>
+        </Center>
+        <center>
+        <h3 class="for">Fill the form</h3>
+        <form class="two">
+            <table>
+            <tr id="name">
+                <td>Name</td><td><input type="text" placeholder="Enter your respective name"></td>
+            </tr>
+            <tr id="age">
+                <td>Age</td><td><input type="number" placeholder="Enter your age"></td>
+            </tr>
+            <tr id="class">
+                <td>Class</td>
+                <td>
+                <select>
+                    <option>5 to 7</option>
+                    <option>8 to 12</option>
+                    <option>13 to 15</option>
+                    <option>16 to 18</option>
+                </select>
+                </td>
+            </tr>
+            <tr>
+               <button onclick="submitForm()">Submit</button>
+               <button onclick="resetForm()">Reset</button>
+            </tr>
+            </table>
+        </form>
+        </center>
+        <hr> 
+        <div class="main">
+            <div class="sub">
+                <h3>Book 1</h3>
+                <img  class="im"        src="https://m.media-amazon.com/images/I/9115OTjGQgL._SL1500_.jpg">
+                <button>History</button>
+            </div>
+            <div class="sub">
+                <h3>Book 2</h3>
+                <img    class="im"     src="https://tse1.mm.bing.net/th/id/OIP.yvwg-N5ksTJ1no_AiT6dHAHaFj?cb=ucfimg2&ucfimg=1&w=2560&h=1920&rs=1&pid=ImgDetMain&o=7&rm=3">
+                <button>Geography</button>
+            </div>
+             <div class="sub">
+                <h3>Book 3</h3>
+                <img class="im" src=https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1693401496i/195967140.jpg>
+                <button>Ecnomics</button>
+            </div>
+            <div class="sub">
+                <h3>Book 4</h3>
+                <img class="im" src=https://tse3.mm.bing.net/th/id/OIP.Xk6tWj3LhVSijYpVTEq0JQHaJh?rs=1&pid=ImgDetMain&o=7&rm=3>
+                <button>Physics</button>
+            </div>
+            
+        </div>
+    </body>
+</html>;
+<script>
+    function submitForm() {
+  // get values
+  const name = document.getElementById("name").value;
+  const age = document.getElementById("age").value;
+  const cls = document.getElementById("class").value;
+
+  // validation
+  if (name === "" || age === "" || cls === "") {
+    alert("⚠ Please fill all fields");
+    return;
+  }
+submitForm() ;
+  // display result
+  document.getElementById("result").innerHTML =
+    "Name : " + name + "<br>" +
+    "Age : " + age + "<br>" +
+    "Class : " + cls;
+}
+
+function resetForm() {
+  document.getElementById("name").value = "";
+  document.getElementById("age").value = "";
+  document.getElementById("class").value = "";
+  document.getElementById("result").innerHTML = "";
+}
+ resetForm();
+</script>
